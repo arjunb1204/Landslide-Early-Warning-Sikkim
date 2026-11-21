@@ -1,10 +1,10 @@
 [
   {
-    "name": "Primary Mobile",
-    "phone": "8295755754"
+    "name": "SDMA Control Room (Primary)",
+    "phone": "9800000001"
   },
   {
-    "name": "Secondary Mobile",
-    "phone": "7217867513"
+    "name": "District Emergency Operations (Secondary)",
+    "phone": "9800000002"
   }
 ]

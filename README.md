@@ -204,7 +204,7 @@ When a cell crosses the **Severe Risk ($P > 0.75$)** threshold, the system trigg
 │   │   │   ├── SelectedCellPanel.jsx
 │   │   │   └── SmsBroadcastModal.jsx
 │   │   ├── data/
-│   │   │   ├── emergencyContacts.json   # Targeted real-world contact roster
+│   │   │   ├── emergencyContacts.json   # Configurable emergency contact roster
 │   │   │   ├── realRiskData.json        # 7,120 state-wide grid cells
 │   │   │   └── pooledReportsDb.json     # Crowdsourced field reports
 │   │   └── services/
@@ -222,7 +222,6 @@ When a cell crosses the **Severe Risk ($P > 0.75$)** threshold, the system trigg
 │   └── sikkim_susceptibility_map.png
 ├── PREPROCESSING/                       # 01 through 08 geodata preprocessing scripts
 ├── ML_AND_BACKEND_TECHNICAL_SPECIFICATION.md  # Deep-dive technical handbook
-├── RESUME_PROJECT_DOSSIER.md            # Structured resume input dossier
 ├── CODEBASE_ARCHITECTURE_GUIDE.md       # Architecture specification
 └── README.md                            # Main documentation
 ```
@@ -260,7 +259,7 @@ adb devices
 ```
 4. Test automated SMS dispatch:
 ```bash
-python3 FRONTEND/server/send_sms_adb.py "8295755754" "[NDMA ALERT] Landslide Warning Test"
+python3 FRONTEND/server/send_sms_adb.py "+919800000001" "[NDMA ALERT] Landslide Warning Test"
 ```
 
 ---
